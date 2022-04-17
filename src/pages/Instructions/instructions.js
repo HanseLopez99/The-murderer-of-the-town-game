@@ -6,6 +6,7 @@ import gradasImg from "../../assets/images/gradas.jpg";
 export const instructions = () => {
   const body = document.getElementById("body-container");
   body.innerHTML = "";
+  window.scrollTo(0, 0);
 
   let navbarElement = document.createElement("header");
   navbarElement = navBar(
@@ -58,14 +59,14 @@ export const instructions = () => {
   col2.setAttribute("class", "col");
   let buttonElement2 = document.createElement("button");
   buttonElement2.setAttribute("class", "btn-lg btn-primary");
-  buttonElement2.setAttribute("id", "btn1");
+  buttonElement2.setAttribute("id", "btn2");
   buttonElement2.innerHTML = "Ve hacia el pasillo de la izquierda";
   buttonElement2.setAttribute("type", "button");
   let col3 = document.createElement("div");
   col3.setAttribute("class", "col");
   let buttonElement3 = document.createElement("button");
   buttonElement3.setAttribute("class", "btn-lg btn-primary");
-  buttonElement3.setAttribute("id", "btn1");
+  buttonElement3.setAttribute("id", "btn3");
   buttonElement3.innerHTML = "Regresa por donde vienes";
   buttonElement3.setAttribute("type", "button");
 

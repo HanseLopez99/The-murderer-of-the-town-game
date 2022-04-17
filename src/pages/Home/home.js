@@ -3,24 +3,20 @@ import { footer } from "../../tools/footer";
 import { aboutUs } from "../AboutUs/aboutUs";
 import { contactUs } from "../ContactUs/contactUs";
 import { instructions } from "../Instructions/instructions";
+import { llegada } from "../Llegada/llegada";
 import townImg from "../../assets/images/Town.jpg";
 import terrorSoundAudio from "../../assets/sounds/terrorSound.mp3";
 
 export const home = () => {
   const body = document.getElementById("body-container");
   body.innerHTML = "";
+  window.scrollTo(0, 0);
 
   let navbarElement = document.createElement("header");
   navbarElement = navBar(
     [
-      {
-        name: "Quienes somos",
-        dest: "aboutUsTab"
-      },
-      {
-        name: "Contactanos",
-        dest: "contactUsTab"
-      }
+      { name: "Quienes somos", dest: "aboutUsTab" },
+      { name: "Contactanos", dest: "contactUsTab" }
     ],
     navbarElement
   );
@@ -56,6 +52,7 @@ export const home = () => {
   audioContainerElement.setAttribute("id", "audioContainer");
   let audioElement = document.createElement("audio");
   audioElement.setAttribute("controls", "");
+  audioElement.innerHTML = `Tu navegador no soporta HTML5 audio.`;
   let sourceElement = document.createElement("source");
   sourceElement.setAttribute("src", terrorSoundAudio);
   sourceElement.setAttribute("type", "audio/mpeg");
@@ -79,7 +76,7 @@ export const home = () => {
   let liElement = document.createElement("li");
   liElement.innerHTML = "No hagas trampa";
   let liElement2 = document.createElement("li");
-  liElement2.innerHTML = "Puedes finalizar de jugar cuando queiras";
+  liElement2.innerHTML = "Puedes finalizar de jugar cuando quieras";
   let liElement3 = document.createElement("li");
   liElement3.innerHTML = "Disfruta el juego";
   let h3Element3 = document.createElement("h3");
@@ -111,7 +108,7 @@ export const home = () => {
   buttonElement2.setAttribute("id", "btnHome");
   buttonElement2.innerHTML = "START GAME";
   buttonElement2.setAttribute("type", "button");
-  buttonElement2.addEventListener("click", instructions);
+  buttonElement2.addEventListener("click", llegada);
 
   articleElement.appendChild(h2Element);
   postMetaElement.appendChild(spanElement);

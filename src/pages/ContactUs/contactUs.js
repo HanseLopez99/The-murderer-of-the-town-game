@@ -1,15 +1,18 @@
 import { navBar } from "../../tools/navBar";
 import { footer } from "../../tools/footer";
 import { home } from "../Home/home";
+import { aboutUs } from "../AboutUs/aboutUs";
 
 export const contactUs = () => {
   const body = document.getElementById("body-container");
   body.innerHTML = "";
+  window.scrollTo(0, 0);
 
   let navbarElement = document.createElement("header");
   navbarElement = navBar(
     [
-      { name: "Home", dest: "homeTab" }
+      { name: "Home", dest: "homeTab" },
+      { name: "Quienes somos", dest: "aboutUsTab" }
     ],
     navbarElement
   );
@@ -117,27 +120,21 @@ export const contactUs = () => {
 
   articleElement.appendChild(h2Element);
   articleElement.appendChild(pElement);
-
   inputContainer.appendChild(labelElement);
   inputContainer.appendChild(inputElement);
   articleElement.appendChild(inputContainer);
-
   inputContainer2.appendChild(labelElement2);
   inputContainer2.appendChild(inputElement2);
   articleElement.appendChild(inputContainer2);
-
   articleElement.appendChild(labelElement3);
   inputContainer3.appendChild(spanElement);
   inputContainer3.appendChild(inputElement3);
   articleElement.appendChild(inputContainer3);
-
   inputContainer4.appendChild(labelElement4);
   inputContainer4.appendChild(inputElement4);
   articleElement.appendChild(inputContainer4);
-
   articleElement.appendChild(buttonElement);
   articleElement.appendChild(pElement2);
-
   aElement1.appendChild(imgElement1);
   colElement1.appendChild(aElement1);
   aElement2.appendChild(imgElement2);
@@ -163,4 +160,6 @@ export const contactUs = () => {
   logoTabElement.addEventListener("click", home);
   let homeTabElement = document.getElementById("homeTab");
   homeTabElement.addEventListener("click", home);
+  let aboutUsTabElement = document.getElementById("aboutUsTab");
+  aboutUsTabElement.addEventListener("click", aboutUs);
 }

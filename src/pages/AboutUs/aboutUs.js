@@ -2,15 +2,18 @@ import { navBar } from "../../tools/navBar";
 import { footer } from "../../tools/footer";
 import ProgrammersWebDevelopersImg from "../../assets/images/ProgrammersWebDevelopers.jpg";
 import { home } from "../Home/home";
+import { contactUs } from "../ContactUs/contactUs";
 
 export const aboutUs = () => {
   const body = document.getElementById("body-container");
   body.innerHTML = "";
+  window.scrollTo(0, 0);
 
   let navbarElement = document.createElement("header");
   navbarElement = navBar(
     [
-      { name: "Home", dest: "homeTab" }
+      { name: "Home", dest: "homeTab" },
+      { name: "Contactanos", dest: "contactUsTab" }
     ],
     navbarElement
   );
@@ -47,4 +50,6 @@ export const aboutUs = () => {
   logoTabElement.addEventListener("click", home);
   let homeTabElement = document.getElementById("homeTab");
   homeTabElement.addEventListener("click", home);
+  let contactUsTabElement = document.getElementById("contactUsTab");
+  contactUsTabElement.addEventListener("click", contactUs);
 };
