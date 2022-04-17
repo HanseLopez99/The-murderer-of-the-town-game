@@ -55,6 +55,25 @@ module.exports = {
           }
         ]
       },
+      {
+        test: /\.(png|jpe?g|gif|mp4)$/i,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'Assets/Images',
+          name: '[contenthash].[ext]',
+        },
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.mp3$/i,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'Assets/Sounds',
+        },
+      }
     ],
   },
   devServer: {
