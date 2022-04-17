@@ -21,7 +21,6 @@ export const aboutUs = () => {
   articleElement.setAttribute("id", "aboutUs");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Acerca de Nosotros";
-  articleElement.appendChild(h2Element);
   let imgElement = document.createElement("img");
   imgElement.src = ProgrammersWebDevelopersImg;
   imgElement.setAttribute("alt", "Trulli");
@@ -34,6 +33,8 @@ export const aboutUs = () => {
   comprometemos a promover la buena éticaen el desarrollo de nuestros productos, así como a 
   la seguridad de nuestros usuarios.`;
   pElement.setAttribute("id", "pAboutUs");
+
+  articleElement.appendChild(h2Element);
   articleElement.appendChild(imgElement);
   articleElement.appendChild(pElement);
   body.appendChild(articleElement);

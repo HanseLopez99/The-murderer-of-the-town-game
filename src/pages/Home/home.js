@@ -1,6 +1,7 @@
 import { navBar } from "../../tools/navBar";
 import { footer } from "../../tools/footer";
 import { aboutUs } from "../AboutUs/aboutUs";
+import { contactUs } from "../ContactUs/contactUs";
 import { instructions } from "../Instructions/instructions";
 import townImg from "../../assets/images/Town.jpg";
 import terrorSoundAudio from "../../assets/sounds/terrorSound.mp3";
@@ -152,4 +153,6 @@ export const home = () => {
 
   let aboutUsTabElement = document.getElementById("aboutUsTab");
   aboutUsTabElement.addEventListener("click", aboutUs);
+  let contactUsTabElement = document.getElementById("contactUsTab");
+  contactUsTabElement.addEventListener("click", contactUs);
 }
