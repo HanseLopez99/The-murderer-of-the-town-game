@@ -24,6 +24,7 @@ export const aboutUs = () => {
   articleElement.setAttribute("id", "aboutUs");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Acerca de Nosotros";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgElement = document.createElement("img");
   imgElement.src = ProgrammersWebDevelopersImg;
   imgElement.setAttribute("alt", "Trulli");

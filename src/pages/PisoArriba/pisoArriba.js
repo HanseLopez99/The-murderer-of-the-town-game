@@ -25,6 +25,7 @@ export const pisoArriba = () => {
   articleElement.setAttribute("id", "pisoArriba");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Subes al segundo nivel de la casa de tu amigo";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgContainerElement = document.createElement("div");
   imgContainerElement.setAttribute("class", "text-center");
   let imgElement = document.createElement("img");

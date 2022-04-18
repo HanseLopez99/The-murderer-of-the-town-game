@@ -25,6 +25,7 @@ export const llegada = () => {
   articleElement.setAttribute("id", "llegada");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Tu llegada al misterioso pueblo";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgContainerElement = document.createElement("div");
   imgContainerElement.setAttribute("class", "text-center");
   let imgElement = document.createElement("img");

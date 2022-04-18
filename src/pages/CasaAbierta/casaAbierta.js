@@ -25,6 +25,7 @@ export const casaAbierta = () => {
   articleElement.setAttribute("id", "casaAbierta");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Entras a la casa que tenía la puerta abierta";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgContainerElement = document.createElement("div");
   imgContainerElement.setAttribute("class", "text-center");
   let imgElement = document.createElement("img");

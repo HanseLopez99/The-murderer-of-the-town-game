@@ -24,6 +24,7 @@ export const puertaPiso = () => {
   articleElement.setAttribute("id", "puertaPiso");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Entraste en la puerta que estaba en el piso";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgContainerElement = document.createElement("div");
   imgContainerElement.setAttribute("class", "text-center");
   let imgElement = document.createElement("img");

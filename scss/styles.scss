@@ -7,3 +7,7 @@ body {
   background-color: white;
   color: black;
 }
+
+.animate__animated.animate__headShake {
+  --animate-duration: 2s;
+}

@@ -24,6 +24,7 @@ export const sigueInvestigando = () => {
   articleElement.setAttribute("id", "sigueInvestigando");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Bajas de nuevo al primer nivel";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgContainerElement = document.createElement("div");
   imgContainerElement.setAttribute("class", "text-center");
   let imgElement = document.createElement("img");

@@ -27,6 +27,7 @@ export const home = () => {
   articleElement.setAttribute("id", "home");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Bienvenido a: The murderer of the town!";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let postMetaElement = document.createElement("div");
   let spanElement = document.createElement("span");
   spanElement.innerHTML = "Publicado por: Hansel López | ";

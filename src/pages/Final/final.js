@@ -24,6 +24,7 @@ export const final = () => {
   articleElement.setAttribute("id", "final");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Encuentras a un sujeto con una apariencia un poco descuidada";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgContainerElement = document.createElement("div");
   imgContainerElement.setAttribute("class", "text-center");
   let imgElement = document.createElement("img");

@@ -22,6 +22,7 @@ export const instructions = () => {
   articleElement.setAttribute("id", "instructions");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Instrucciones y Controles";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let pElement = document.createElement("p");
   pElement.setAttribute("class", "container my-2");
   pElement.innerHTML = `El objetivo es que vayas avanzando por los distintos escenarios hasta lograr 

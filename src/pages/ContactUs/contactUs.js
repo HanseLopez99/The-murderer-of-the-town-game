@@ -23,6 +23,7 @@ export const contactUs = () => {
   articleElement.setAttribute("id", "contactUs");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Contactanos";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let pElement = document.createElement("p");
   pElement.setAttribute("class", "container my-2");
   pElement.innerHTML = `Para ser contactado por un asesor por favor compartenos los siguientes datos:`

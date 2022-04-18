@@ -24,6 +24,7 @@ export const intercepto = () => {
   articleElement.setAttribute("id", "intercepto");
   let h2Element = document.createElement("h2");
   h2Element.innerHTML = "Vas corriendo hasta salir del pueblo";
+  h2Element.setAttribute("class", "animate__animated animate__headShake");
   let imgContainerElement = document.createElement("div");
   imgContainerElement.setAttribute("class", "text-center");
   let imgElement = document.createElement("img");
