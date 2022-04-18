@@ -2,6 +2,7 @@ import { navBar } from "../../tools/navBar";
 import { footer } from "../../tools/footer";
 import { home } from "../Home/home";
 import { intercepto } from "../Intercepto/intercepto";
+import { sigueInvestigando } from "../SigueInvestigando/sigueInvestigando";
 import terrorSoundAudio from "../../assets/sounds/terrorSound.mp3";
 import segundoNivelImg from "../../assets/images/segundoNivel.jpg";
 
@@ -81,6 +82,7 @@ export const pisoArriba = () => {
   buttonElement2.setAttribute("id", "btn2");
   buttonElement2.innerHTML = "Mantener la calma y seguir investigando, el primer nivel";
   buttonElement2.setAttribute("type", "button");
+  buttonElement2.addEventListener("click", sigueInvestigando);
   let labelElement = document.createElement("label");
   labelElement.setAttribute("for", "progress");
   labelElement.innerHTML = "Game progress:";

@@ -1,6 +1,7 @@
 import { navBar } from "../../tools/navBar";
 import { footer } from "../../tools/footer";
 import { home } from "../Home/home";
+import { failed } from "../Failed/failed";
 import terrorSoundAudio from "../../assets/sounds/terrorSound.mp3";
 import gradasSotanoImg from "../../assets/images/gradasSotano.jpg";
 
@@ -64,6 +65,7 @@ export const puertaPiso = () => {
   buttonElement.setAttribute("id", "btn1");
   buttonElement.innerHTML = "Continuar";
   buttonElement.setAttribute("type", "button");
+  buttonElement.addEventListener("click", failed);
   let labelElement = document.createElement("label");
   labelElement.setAttribute("for", "progress");
   labelElement.innerHTML = "Game progress:";

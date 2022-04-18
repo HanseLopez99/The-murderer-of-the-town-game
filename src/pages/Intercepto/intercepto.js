@@ -1,6 +1,7 @@
 import { navBar } from "../../tools/navBar";
 import { footer } from "../../tools/footer";
 import { home } from "../Home/home";
+import { failed } from "../Failed/failed";
 import huirImg from "../../assets/images/huir.jpg";
 import runningAudio from "../../assets/sounds/running.mp3";
 
@@ -60,6 +61,7 @@ export const intercepto = () => {
   buttonElement.setAttribute("id", "btn1");
   buttonElement.innerHTML = "Voltear a ver";
   buttonElement.setAttribute("type", "button");
+  buttonElement.addEventListener("click", failed);
   let col2 = document.createElement("div");
   col2.setAttribute("class", "col");
   let buttonElement2 = document.createElement("button");
@@ -67,6 +69,7 @@ export const intercepto = () => {
   buttonElement2.setAttribute("id", "btn2");
   buttonElement2.innerHTML = "No voltear a ver";
   buttonElement2.setAttribute("type", "button");
+  buttonElement2.addEventListener("click", failed);
   let labelElement = document.createElement("label");
   labelElement.setAttribute("for", "progress");
   labelElement.innerHTML = "Game progress:";
