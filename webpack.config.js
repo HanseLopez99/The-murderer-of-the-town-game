@@ -14,7 +14,7 @@ module.exports = {
     }),
   ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'bundle_sin_babel'),
     filename: 'main.[fullhash].bundle.js',
     clean: true
   },
