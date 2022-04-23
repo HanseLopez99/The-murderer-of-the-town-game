@@ -14,7 +14,7 @@ module.exports = {
     }),
   ],
   output: {
-    path: path.resolve(__dirname, 'bundle_sin_babel'),
+    path: path.resolve(__dirname, 'bundle_con_babel'),
     filename: 'main.[fullhash].bundle.js',
     clean: true
   },
@@ -54,6 +54,11 @@ module.exports = {
             loader: 'sass-loader'
           }
         ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: "babel-loader"
       },
       {
         test: /\.(png|jpe?g|gif|mp4)$/i,
