@@ -1,4 +1,6 @@
 import { home } from "./pages/Home/home";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 // Import styles
 import "../scss/styles.scss";

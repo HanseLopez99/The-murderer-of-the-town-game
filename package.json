@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack",
     "serve": "webpack serve",
+    "babel": "babel src --out-dir output_babel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,9 @@
   },
   "homepage": "https://github.com/HanseLopez99/TecnologiasWeb-Lab6#readme",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
     "autoprefixer": "^10.4.4",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
@@ -38,6 +42,8 @@
     "@popperjs/core": "^2.11.5",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.1.3",
-    "path": "^0.12.7"
+    "core-js": "^3.22.2",
+    "path": "^0.12.7",
+    "regenerator-runtime": "^0.13.9"
   }
 }
