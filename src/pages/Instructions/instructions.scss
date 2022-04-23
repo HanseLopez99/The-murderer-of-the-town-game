@@ -1,0 +1,24 @@
+#instructions {
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  #imgContainer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    #imgInstructions {
+      width: 400px;
+    }
+  }
+
+  #pInstructions {
+    font-size: 1.5rem;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
+  }
+}
+
+button {
+  width: 100%;
+}
